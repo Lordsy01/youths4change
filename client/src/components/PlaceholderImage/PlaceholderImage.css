@@ -1,0 +1,36 @@
+.ph-image {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(135deg, #E8DFC8 0%, #D9E4D3 100%);
+  position: relative;
+}
+
+.ph-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ph-image--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 2px dashed #C7BBA0;
+  color: var(--color-ink-soft);
+}
+
+.ph-image__icon {
+  font-size: 1.8rem;
+  opacity: 0.6;
+}
+
+.ph-image__label {
+  font-family: var(--font-label);
+  font-size: var(--fs-small);
+  text-align: center;
+  padding: 0 1rem;
+  opacity: 0.75;
+}

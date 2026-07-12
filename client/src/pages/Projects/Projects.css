@@ -1,0 +1,15 @@
+.projects-page h1 {
+  font-size: var(--fs-h1);
+  margin: var(--space-sm) 0 var(--space-md);
+}
+.projects-page__lead {
+  max-width: 68ch;
+  color: var(--color-ink-soft);
+  margin-bottom: var(--space-lg);
+  font-size: 1.05rem;
+}
+.projects-page .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}

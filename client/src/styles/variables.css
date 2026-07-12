@@ -1,0 +1,39 @@
+:root {
+  /* Colors — inspired by Bamenda's green hills, harmattan gold, and warm earth */
+  --color-bg: #FBF8F2;          /* warm paper */
+  --color-bg-alt: #F1ECE0;      /* slightly deeper paper, for alternating sections */
+  --color-ink: #1B2A1E;         /* near-black forest ink, primary text */
+  --color-ink-soft: #4A5A4C;    /* muted body text */
+  --color-primary: #2F5233;     /* deep forest green — growth, GreenFuture */
+  --color-primary-dark: #1F3A24;
+  --color-accent: #E8A33D;      /* marigold gold — warmth, hope */
+  --color-accent-2: #D64550;    /* coral red — energy, calls to action */
+  --color-line: #DCD3C0;        /* hairline warm gray for dividers */
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Work Sans', 'Segoe UI', sans-serif;
+  --font-label: 'Work Sans', sans-serif;
+
+  /* Type scale */
+  --fs-hero: clamp(2.6rem, 6vw, 4.6rem);
+  --fs-h1: clamp(2rem, 4vw, 3rem);
+  --fs-h2: clamp(1.5rem, 3vw, 2.1rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1.05rem;
+  --fs-small: 0.875rem;
+  --fs-label: 0.78rem;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 7rem;
+
+  /* Layout */
+  --max-width: 1180px;
+  --radius: 14px;
+  --shadow-soft: 0 12px 32px rgba(31, 58, 36, 0.10);
+}

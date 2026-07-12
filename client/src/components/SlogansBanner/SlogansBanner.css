@@ -1,0 +1,33 @@
+.slogans-banner {
+  background: var(--color-primary);
+  padding: 0.9rem 0;
+  overflow: hidden;
+}
+
+.slogans-banner__track {
+  position: relative;
+  height: 1.6rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.slogans-banner__item {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--color-white);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slogans-banner__item.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
