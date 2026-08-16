@@ -70,3 +70,4 @@ up any images you list — no code changes needed beyond that.
 Almost all page copy (vision, mission, slogans, project descriptions,
 membership requirements) lives in plain JS files under `client/src/data/`, so
 you can update wording without touching any component code.
+# youths4changeinit
