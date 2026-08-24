@@ -1,0 +1,86 @@
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.about-grid h2 {
+  font-size: var(--fs-lg);
+  margin-top: 0.4rem;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.values-grid {
+  margin-top: var(--space-1);
+}
+
+.value-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.value-card h3 {
+  font-size: 1.1rem;
+}
+
+.value-card p {
+  font-size: var(--fs-sm);
+  margin-bottom: 0;
+}
+
+.structure-block {
+  max-width: 760px;
+}
+
+.structure-note {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.structure-note p {
+  margin: 0;
+  font-size: var(--fs-sm);
+}
+
+.team-grid {
+  margin-top: var(--space-1);
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card h4 {
+  margin-top: var(--space-2);
+  margin-bottom: 0.1rem;
+}
+
+.team-card__role {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--rust);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 860px) {
+  .about-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,52 @@
+/* =========================================================
+   PROGRAM CARD
+   ========================================================= */
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  color: var(--text);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+  color: var(--text);
+}
+
+.program-card .img-placeholder {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.program-card__body {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.program-card__body h3 {
+  font-size: 1.15rem;
+  margin: 0.1rem 0 0.2rem;
+}
+
+.program-card__body p {
+  font-size: var(--fs-sm);
+  margin-bottom: 0.4rem;
+}
+
+.program-card__link {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.05em;
+  color: var(--rust);
+  font-weight: 500;
+}

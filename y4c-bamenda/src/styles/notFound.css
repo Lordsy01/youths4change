@@ -1,0 +1,17 @@
+/* =========================================================
+   404 PAGE
+   ========================================================= */
+
+.not-found {
+  padding: var(--space-6) 0;
+}
+
+.not-found__inner {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.not-found__inner .btn {
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,29 @@
+/* =========================================================
+   PAGE HERO (inner pages)
+   ========================================================= */
+
+.page-hero {
+  background: var(--indigo-deep);
+  color: var(--cream);
+  padding-top: var(--space-5);
+}
+
+.page-hero__inner {
+  padding-bottom: var(--space-4);
+  max-width: 760px;
+}
+
+.page-hero .eyebrow {
+  color: var(--gold);
+}
+
+.page-hero h1 {
+  color: var(--white);
+  margin-top: 0.6rem;
+}
+
+.page-hero p {
+  color: #d7dcee;
+  font-size: var(--fs-md);
+  max-width: 620px;
+}

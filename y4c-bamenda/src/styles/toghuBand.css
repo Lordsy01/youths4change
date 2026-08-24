@@ -1,0 +1,39 @@
+/* =========================================================
+   TOGHU BAND — signature decorative strip
+   ========================================================= */
+
+.toghu-band {
+  width: 100%;
+  height: 22px;
+  line-height: 0;
+}
+
+.toghu-band__svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.toghu-band--dark {
+  background: var(--indigo-deep);
+}
+
+.toghu-band--dark .toghu-band__diamond {
+  fill: var(--gold);
+}
+
+.toghu-band--dark .toghu-band__dot {
+  fill: var(--rust);
+}
+
+.toghu-band--light {
+  background: var(--cream-deep);
+}
+
+.toghu-band--light .toghu-band__diamond {
+  fill: var(--indigo);
+}
+
+.toghu-band--light .toghu-band__dot {
+  fill: var(--rust);
+}

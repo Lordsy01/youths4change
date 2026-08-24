@@ -1,0 +1,74 @@
+/* =========================================================
+   PROGRAM DETAIL PAGE
+   ========================================================= */
+
+.program-detail__top {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.program-detail__summary {
+  font-size: var(--fs-md);
+  color: var(--text);
+}
+
+.program-detail__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.program-detail__columns h2 {
+  font-size: var(--fs-lg);
+  margin-top: 0.4rem;
+}
+
+.program-detail__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.program-detail__list li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--text-soft);
+  font-size: var(--fs-sm);
+}
+
+.program-detail__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 9px;
+  height: 9px;
+  background: var(--gold);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.program-detail__who {
+  text-align: center;
+  max-width: 700px;
+}
+
+.program-detail__who h2 {
+  margin-top: 0.4rem;
+}
+
+.program-detail__gallery {
+  margin-top: var(--space-1);
+}
+
+@media (max-width: 860px) {
+  .program-detail__top,
+  .program-detail__columns {
+    grid-template-columns: 1fr;
+  }
+}

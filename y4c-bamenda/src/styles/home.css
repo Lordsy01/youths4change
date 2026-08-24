@@ -1,0 +1,156 @@
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
+
+.hero {
+  background: var(--cream);
+  padding: var(--space-5) 0 var(--space-5);
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.hero__text h1 {
+  margin-top: 0.5rem;
+  font-size: var(--fs-3xl);
+}
+
+.hero__text p {
+  font-size: var(--fs-md);
+  max-width: 480px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  flex-wrap: wrap;
+}
+
+/* ---- Impact strip ---- */
+.impact-strip {
+  padding: var(--space-4) 0;
+}
+
+.impact-strip__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.impact-strip__value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.impact-strip__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c9cfe4;
+  margin-top: 0.3rem;
+}
+
+/* ---- Mission snapshot ---- */
+.mission-snapshot {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.mission-snapshot__text p {
+  font-size: var(--fs-md);
+}
+
+/* ---- Section heading ---- */
+.section-heading {
+  max-width: 640px;
+  margin: 0 auto var(--space-4);
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin-top: 0.5rem;
+}
+
+/* ---- Pillars ---- */
+.pillar-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--gold);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.pillar-card h3 {
+  font-size: 1.15rem;
+}
+
+.pillar-card p {
+  font-size: var(--fs-sm);
+  margin-bottom: 0;
+}
+
+/* ---- CTA banner ---- */
+.cta-banner {
+  background: var(--gold);
+  margin-top: var(--space-6);
+}
+
+.cta-banner__inner {
+  padding: var(--space-4) var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.cta-banner h2 {
+  color: var(--indigo-deep);
+  margin-bottom: 0.2rem;
+}
+
+.cta-banner p {
+  color: #4a3a17;
+  margin-bottom: 0;
+}
+
+.cta-banner .btn-primary {
+  background: var(--indigo-deep);
+  color: var(--white);
+}
+
+.cta-banner .btn-primary:hover {
+  background: var(--rust);
+}
+
+@media (max-width: 860px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .hero__image {
+    order: -1;
+  }
+  .impact-strip__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mission-snapshot {
+    grid-template-columns: 1fr;
+  }
+  .mission-snapshot__image {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

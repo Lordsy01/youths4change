@@ -1,0 +1,65 @@
+/* =========================================================
+   DESIGN TOKENS — Youths 4 Change Bamenda
+   Palette is drawn from the Grassfields region's own materials:
+   the deep indigo of resist-dyed cloth, and the gold / rust
+   embroidery thread of Toghu, Bamenda's ceremonial dress —
+   rather than a generic "NGO blue" template.
+   ========================================================= */
+
+:root {
+  /* ---- Color: base ---- */
+  --ink: #1c1b19;          /* warm near-black, primary text */
+  --ink-soft: #4a463f;     /* secondary text on light bg */
+  --cream: #faf6ec;        /* primary page background */
+  --cream-deep: #f1ead9;   /* subtle section tint */
+  --white: #ffffff;
+
+  /* ---- Color: brand ---- */
+  --indigo: #24356e;       /* primary brand / links / dark sections */
+  --indigo-deep: #16234a;  /* darkest brand shade, footer, nav-dark */
+  --gold: #d8a23b;         /* primary accent, CTAs, highlights */
+  --gold-soft: #ecd8ab;    /* tints, hover backgrounds */
+  --rust: #a83a2c;         /* secondary accent (Toghu embroidery red) */
+  --green: #4b7856;        /* GreenFuture Initiative accent */
+
+  /* ---- Semantic ---- */
+  --bg: var(--cream);
+  --bg-alt: var(--cream-deep);
+  --text: var(--ink);
+  --text-soft: var(--ink-soft);
+  --brand: var(--indigo);
+  --accent: var(--gold);
+  --border: #e2d9c4;
+
+  /* ---- Typography ---- */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.925rem;
+  --fs-base: 1rem;
+  --fs-md: 1.15rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2.1rem;
+  --fs-2xl: 2.9rem;
+  --fs-3xl: 3.8rem;
+
+  /* ---- Layout ---- */
+  --max-width: 1180px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 22px;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+
+  --shadow-sm: 0 2px 10px rgba(28, 27, 25, 0.08);
+  --shadow-md: 0 10px 30px rgba(22, 35, 74, 0.12);
+
+  --transition: 200ms ease;
+}

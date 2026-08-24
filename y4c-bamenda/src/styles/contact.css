@@ -1,0 +1,107 @@
+/* =========================================================
+   CONTACT / GET INVOLVED PAGE
+   ========================================================= */
+
+.involvement-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  text-align: center;
+}
+
+.involvement-card h3 {
+  font-size: 1.1rem;
+}
+
+.involvement-card p {
+  font-size: var(--fs-sm);
+  margin-bottom: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--text);
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--gold);
+}
+
+.contact-form button {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+}
+
+.contact-form__success {
+  background: #e7f2ea;
+  border-left: 4px solid var(--green);
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin-top: var(--space-2);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-info__block h4 {
+  margin-bottom: 0.15rem;
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono);
+  color: var(--rust);
+  font-weight: 500;
+}
+
+.contact-info__block p {
+  margin-bottom: 0;
+}
+
+.contact-info__socials {
+  display: flex;
+  gap: var(--space-2);
+}
+
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

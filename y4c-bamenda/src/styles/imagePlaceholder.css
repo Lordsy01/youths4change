@@ -1,0 +1,61 @@
+/* =========================================================
+   IMAGE PLACEHOLDER
+   ========================================================= */
+
+.img-placeholder {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 2px dashed var(--border);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--cream-deep),
+    var(--cream-deep) 10px,
+    #ece3ce 10px,
+    #ece3ce 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-placeholder--wide {
+  aspect-ratio: 16 / 10;
+}
+
+.img-placeholder--square {
+  aspect-ratio: 1 / 1;
+}
+
+.img-placeholder--tall {
+  aspect-ratio: 3 / 4;
+}
+
+.img-placeholder__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+  padding: var(--space-2);
+  color: var(--ink-soft);
+}
+
+.img-placeholder__icon {
+  font-size: 1.8rem;
+}
+
+.img-placeholder__label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--indigo);
+}
+
+.img-placeholder__note {
+  font-size: var(--fs-xs);
+  color: var(--ink-soft);
+  max-width: 220px;
+}
